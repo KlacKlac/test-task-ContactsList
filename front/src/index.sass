@@ -1,0 +1,127 @@
+@import './assets/styles/helpers.scss'
+
+*
+  box-sizing: border-box
+
+body, h1, h2, h3, p
+  margin: 0
+  padding: 0
+  
+body
+  background: linear-gradient(45deg, #f7c4fc, #3a9ff1) no-repeat
+  @include font_ubuntuRegular
+
+.App
+  display: flex
+  align-items: center
+  justify-content: center
+  min-height: 100vh
+  padding: 20px
+
+.wrapper
+  max-width: 900px
+  width: 100%
+  min-height: 600px
+  border: 2px solid #333
+  border-radius: 20px
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 20px
+
+.Form
+  max-width: 300px
+  width: 100%
+  position: relative
+  &__wrapper
+    position: relative
+    margin-bottom: 20px
+  &__input
+    padding: 7px
+    width: 100%
+    border: 1px solid #333
+    outline: none
+    &_invalid
+      border: 1px solid $color_red
+  &__invalid-message
+    position: absolute
+    left: 0
+    bottom: -16px
+    font-size: 14px
+    color: $color_red
+  &__btn
+    @include btn
+  &__error
+    position: absolute
+    left: 0
+    bottom: -30px
+    color: $color_red
+
+.Contacts
+  width: 100%
+  min-height: 600px
+  &__control
+    width: 100%
+    display: flex
+    justify-content: space-between
+    margin-bottom: 30px
+  &__search
+    width: 80%
+    padding: 5px 8px
+    background-color: rgba(#fff, .2)
+    border: none
+    border-bottom: 1px solid #333
+    outline: none
+  &__message
+    text-align: center
+  &__input
+    width: 30%
+    background-color: transparent
+    border: none
+    border-bottom: 1px solid #333333
+    outline: none
+  &__btn
+    @include btn
+    width: 40px
+    height: 40px
+    position: relative
+  &__item
+    width: 100%
+    border: 2px solid #333
+    padding: 15px 20px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    box-shadow: 0px 0px 10px 0px rgba(#000, .4 )
+    border-radius: 20px
+    &:not(:last-child)
+      margin-bottom: 20px
+    &-btn
+      @include btn
+      position: relative
+      width: 35px
+      height: 35px
+      &:not(:last-child)
+        margin-right: 10px
+  &__icon
+    position: absolute
+    height: 100%
+    width: auto
+    &_edit
+      top: 2px
+      left: 4px
+    &_delete
+      top: 3px
+      left: 3px
+    &_logout
+      top: 5px
+      left: 2px
+    &_add
+      top: 4px
+      left: 4px
+    &_save
+      top: 3px
+      left: 3px
+    &_reset
+      top: 3px
+      left: 3px

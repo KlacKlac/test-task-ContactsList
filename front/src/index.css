@@ -1,0 +1,251 @@
+@font-face {
+  font-family: Ubuntu;
+  src: url("./assets/fonts/ubuntu.woff2") format("woff2"), url("./assets/fonts/ubuntu.woff") format("woff");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(45deg, #f7c4fc, #3a9ff1) no-repeat;
+  font-family: Ubuntu;
+  font-weight: normal;
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.wrapper {
+  max-width: 900px;
+  width: 100%;
+  min-height: 600px;
+  border: 2px solid #333;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
+.Form {
+  max-width: 300px;
+  width: 100%;
+  position: relative;
+}
+
+.Form__wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.Form__input {
+  padding: 7px;
+  width: 100%;
+  border: 1px solid #333;
+  outline: none;
+}
+
+.Form__input_invalid {
+  border: 1px solid #dd1f1f;
+}
+
+.Form__invalid-message {
+  position: absolute;
+  left: 0;
+  bottom: -16px;
+  font-size: 14px;
+  color: #dd1f1f;
+}
+
+.Form__btn {
+  background-color: #fff;
+  padding: 5px 12px;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all ease .1s;
+  transition: all ease .1s;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.Form__btn:hover {
+  background-color: #cccccc;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.Form__error {
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  color: #dd1f1f;
+}
+
+.Contacts {
+  width: 100%;
+  min-height: 600px;
+}
+
+.Contacts__control {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.Contacts__search {
+  width: 80%;
+  padding: 5px 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-bottom: 1px solid #333;
+  outline: none;
+}
+
+.Contacts__message {
+  text-align: center;
+}
+
+.Contacts__input {
+  width: 30%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #333333;
+  outline: none;
+}
+
+.Contacts__btn {
+  background-color: #fff;
+  padding: 5px 12px;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all ease .1s;
+  transition: all ease .1s;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.Contacts__btn:hover {
+  background-color: #cccccc;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.Contacts__item {
+  width: 100%;
+  border: 2px solid #333;
+  padding: 15px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+
+.Contacts__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.Contacts__item-btn {
+  background-color: #fff;
+  padding: 5px 12px;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all ease .1s;
+  transition: all ease .1s;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+
+.Contacts__item-btn:hover {
+  background-color: #cccccc;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.Contacts__item-btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.Contacts__icon {
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+
+.Contacts__icon_edit {
+  top: 2px;
+  left: 4px;
+}
+
+.Contacts__icon_delete {
+  top: 3px;
+  left: 3px;
+}
+
+.Contacts__icon_logout {
+  top: 5px;
+  left: 2px;
+}
+
+.Contacts__icon_add {
+  top: 4px;
+  left: 4px;
+}
+
+.Contacts__icon_save {
+  top: 3px;
+  left: 3px;
+}
+
+.Contacts__icon_reset {
+  top: 3px;
+  left: 3px;
+}

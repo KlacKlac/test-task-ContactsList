@@ -1,0 +1,4 @@
+@font-face {
+  font-family: Ubuntu;
+  src: url("./assets/fonts/ubuntu.woff2") format("woff2"), url("./assets/fonts/ubuntu.woff") format("woff");
+}

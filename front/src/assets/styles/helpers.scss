@@ -1,0 +1,33 @@
+@font-face {
+  font-family: Ubuntu;
+  src: url('./assets/fonts/ubuntu.woff2') format('woff2'),
+    url('./assets/fonts/ubuntu.woff') format('woff');
+}
+
+@mixin font_ubuntuRegular {
+  font-family: Ubuntu;
+  font-weight: normal;
+}
+
+@mixin font_ubuntuBold {
+  font-family: Ubuntu;
+  font-weight: bold;
+}
+
+@mixin btn {
+  background-color: #fff;
+  padding: 5px 12px;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease .1s;
+  box-shadow: 0px 0px 10px 0px rgba(#000, .4 );
+  &:hover{
+    background-color: #cccccc;
+    transform: scale(1.05);
+  }
+
+}
+
+$color_red: #dd1f1f;
